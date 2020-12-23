@@ -1,12 +1,15 @@
 <template>
+<div class="todo">
+
   <v-layout>
     <v-container   >
 
-    <v-row class="d-flex justify-center"
+    <v-row class="d-flex justify-center mt-10"
     >
       <v-col cols="6">
         <v-card class="pa-5"
         >
+        <h3 class="inicia">Inicia Sesión</h3>
           <v-form 
           
           ref="form" 
@@ -40,6 +43,7 @@
     </v-container>
 
   </v-layout>
+</div>
 </template>
 
 <script>
@@ -80,4 +84,15 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+.inicia{
+text-align: center;
+}
+
+.todo {
+   background-image: url("https://www.pouadvocats.com/wp-content/uploads/2018/02/Light-Grey-Background-Texture-4.jpg");
+   object-fit: cover;
+   height: 100vh;
+}
+</style>
